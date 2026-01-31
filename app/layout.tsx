@@ -24,7 +24,7 @@ export default function RootLayout({
       <html lang="en" className={merri.className}>
         <body className="overflow-hidden w-screen h-[100svh] flex flex-col">
           <Header />
-          <main className="border-2 border-red-500 w-full h-full overflow-hidden">{children}</main>
+          <main className="w-full h-full overflow-hidden">{children}</main>
           <Footer />
         </body>
       </html>
