@@ -6,7 +6,7 @@ import InternalNavbar from "./internal-navbar";
 export default function Footer() {
   return (
     <footer
-      className={`w-full grow flex flex-col justify-end items-center py-4`}
+      className="w-full grow flex flex-col justify-end items-center py-4"
     >
       <article className="hidden sm:block">
         <InternalNavbar links={internalNavLinks} />
@@ -15,11 +15,11 @@ export default function Footer() {
         <article className="justify-self-start">
           <SocialsNavbar links={externalNavLinks} />
         </article>
-        <article className="">
+        <article>
           <hr className="my-3 border-slate-500" />
           <div className="flex flex-col justify-center items-center text-slate-500">
             <small>Designed by Mark Satin</small>
-            <small>&copy; 2024</small>
+            <small>&copy; 2026</small>
           </div>
         </article>
         <article className="hidden sm:block sm:justify-self-end">

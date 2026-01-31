@@ -33,11 +33,11 @@ export default async function Page() {
         <meta property="og:author" name="author" content="Mark Satin" />
       </Head>
       <section className="w-full h-full px-4 sm:px-8 ld:px-16 flex justify-center items-center gap-x-4 sm:gap-x-12 md:gap-x-24">
-        <CardTilt>{waterfallReversed && <AboutCard bgImage={waterfallReversed} />}</CardTilt>
         <CardTilt>
-          {waterfallOriginal && profileBanner && (
-            <ContactCard bgImage={waterfallOriginal} bannerImage={profileBanner} />
-          )}
+          <AboutCard bgImage={waterfallReversed!} />
+        </CardTilt>
+        <CardTilt>
+          <ContactCard bgImage={waterfallOriginal!} bannerImage={profileBanner!} />
         </CardTilt>
       </section>
     </>
