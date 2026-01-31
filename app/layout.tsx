@@ -1,14 +1,9 @@
 import Header from "./ui/layout/header";
 import Footer from "./ui/layout/footer";
-import { Lora, Merriweather } from "next/font/google";
+import { Merriweather } from "next/font/google";
 import { ReactNode } from "react";
 import Head from "next/head";
 import "./globals.css";
-
-const lora = Lora({
-  subsets: ["latin"],
-  weight: "400",
-});
 
 const merri = Merriweather({
   subsets: ["latin"],
@@ -29,7 +24,7 @@ export default function RootLayout({
       <html lang="en" className={merri.className}>
         <body className="overflow-hidden w-screen h-[100svh] flex flex-col">
           <Header />
-          <main className="w-full h-full overflow-hidden">{children}</main>
+          <main className="border-2 border-red-500 w-full h-full overflow-hidden">{children}</main>
           <Footer />
         </body>
       </html>

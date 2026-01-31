@@ -25,7 +25,7 @@ export default function Collage({ images }: { images: CollagePhotoType[] }) {
 
   function pauseImageAudio(imageIndex: number) {
     const audio = audioRefs[imageIndex].current;
-    audio && audio.pause();
+    audio?.pause();
   }
 
   return (
